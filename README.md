@@ -39,8 +39,8 @@ npm run preview  # pratinjau hasil build
 Kredensial tertanam sebagai default di `src/config/contentful.js` dan dapat
 ditimpa lewat environment variable (lihat `.env.example`):
 
-- Space ID: `ol9tzluswtja`
-- Access Token: `fOIjltP78AueUT4sCwSm_F6EckHmP7509JfCYXy-SUQ`
+- Space ID: `CONTENTFUL_SPACE_ID_HERE`
+- Access Token: `CONTENTFUL_ACCESS_TOKEN_HERE`
 - Content Type: `parfumes`
 
 Field yang dikonsumsi (sesuai spesifikasi): `name`, `description`, `price`,
