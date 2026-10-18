@@ -1,0 +1,86 @@
+.cta {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(3.5rem, 8vw, 5.5rem) 0;
+  background: var(--coffee);
+  color: var(--cream);
+  text-align: center;
+}
+
+.cta::before,
+.cta::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  background: var(--brown);
+  opacity: 0.5;
+}
+
+.cta::before {
+  width: 340px;
+  height: 340px;
+  top: -140px;
+  left: -120px;
+}
+
+.cta::after {
+  width: 260px;
+  height: 260px;
+  bottom: -110px;
+  right: -90px;
+}
+
+.cta__inner {
+  position: relative;
+  max-width: 720px;
+}
+
+.cta__title {
+  margin: 0.8rem 0 1rem;
+  color: var(--cream);
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 900;
+}
+
+.cta__sub {
+  margin-bottom: 2rem;
+  color: var(--sand);
+  font-size: 1.02rem;
+  line-height: 1.8;
+}
+
+.cta__btn {
+  margin-inline: auto;
+}
+
+.cta__note {
+  margin-top: 1rem;
+  color: var(--sand);
+  font-size: 0.9rem;
+}
+
+.cta__note strong {
+  color: var(--gold);
+}
+
+.cta__assure {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.4rem;
+  margin: 2.2rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cta__assure li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--sand);
+  font-size: 0.88rem;
+}
+
+.cta__assure li svg {
+  color: var(--gold);
+}

@@ -1,0 +1,84 @@
+.proof {
+  background: var(--bg);
+}
+
+.proof__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.proof__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin: 0;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.8rem 1.6rem;
+}
+
+.proof__quote {
+  position: absolute;
+  top: 1.4rem;
+  right: 1.5rem;
+  font-size: 1.6rem;
+  color: var(--sand);
+}
+
+.proof__stars {
+  display: inline-flex;
+  gap: 0.18rem;
+  color: var(--gold);
+  font-size: 0.9rem;
+}
+
+.proof__text {
+  flex: 1;
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--ink-soft);
+}
+
+.proof__who {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.proof__avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--brand);
+  color: var(--gold);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.proof__meta {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+}
+
+.proof__meta strong {
+  font-size: 0.98rem;
+  color: var(--ink);
+}
+
+.proof__meta small {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+@media (max-width: 980px) {
+  .proof__grid {
+    grid-template-columns: 1fr;
+  }
+}
